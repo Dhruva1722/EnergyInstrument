@@ -149,26 +149,25 @@
         android:id="@+id/ly4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="#F0F3F6"
         android:layout_below="@id/monthlyAverageID"
         android:orientation="vertical"
         android:layout_margin="10dp"
         android:layout_centerInParent="true">
 
-       <ImageView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:src="@drawable/chart"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ly5_card1"
-        android:layout_width="wrap_content"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
+        android:layout_margin="10dp"
         android:layout_below="@id/ly4"
         android:background="@drawable/container">
 
@@ -200,36 +199,39 @@
 
     <LinearLayout
         android:id="@+id/ly6_card2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="10dp"
         android:layout_below="@id/ly4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@id/ly5_card1"
-        android:background="@drawable/container">
+        android:background="@drawable/container"
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoflex"
             android:text="AVH-14"
-            android:textSize="12sp"
-            android:fontFamily="@font/robotoflex"/>
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="'01'"
-            android:textSize="12sp"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:fontFamily="@font/robotoflex"/>
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/robotoflex"
+            android:text="'01'"
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoflex"
             android:text="AC MFM-1"
-            android:textSize="12sp"
-            android:fontFamily="@font/robotoflex"/>
+            android:textSize="12sp" />
 
     </LinearLayout>
 

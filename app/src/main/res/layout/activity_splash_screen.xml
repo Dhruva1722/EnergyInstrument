@@ -16,31 +16,53 @@
       android:layout_marginTop="100dp"
         android:fontFamily="@font/robotoflex"
         android:text="Welcome"
-        android:textSize="32sp" />
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#213363"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/multispantxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To Multispan"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#213363"
         android:textSize="20sp"
         android:fontFamily="@font/robotoflex"
         android:layout_below="@id/welcometxt"
         android:layout_centerHorizontal="true"/>
 
-<com.airbnb.lottie.LottieAnimationView
-    android:id="@+id/helloImg"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
-    app:lottie_rawRes="@raw/hello1"
-    app:lottie_autoPlay="true"
-    android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/helloImg"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/rafiki" />
+
+
+
+
+
+
+
+
+
+<!--<com.airbnb.lottie.LottieAnimationView-->
+<!--    android:id="@+id/helloImg"-->
+<!--    android:layout_width="300dp"-->
+<!--    android:layout_height="300dp"-->
+<!--    app:lottie_rawRes="@raw/hello1"-->
+<!--    app:lottie_autoPlay="true"-->
+<!--    android:layout_centerInParent="true"/>-->
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Started"
+        android:text="Getting Started"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/helloImg"
         android:layout_marginTop="20dp"

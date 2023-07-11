@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
 
 public class HomeFragment extends Fragment {
@@ -22,7 +24,7 @@ public class HomeFragment extends Fragment {
         View view =   inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        LinearLayout inductionmotor1 = view.findViewById(R.id.inductionmotor1);
+        TableRow inductionmotor1 = view.findViewById(R.id.inductionmotor1);
         inductionmotor1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -24,7 +24,7 @@ public class HomeFragment extends Fragment {
         View view =   inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        TableRow inductionmotor1 = view.findViewById(R.id.inductionmotor1);
+        LinearLayout inductionmotor1 = view.findViewById(R.id.inductionmotor1);
         inductionmotor1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
